@@ -2,142 +2,144 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Hackathon 2025 - Register</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hackathon 2025</title>
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=K2D:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/register.css" />
   </head>
-  <body>
-    <nav class="navbar">
-      <div class="logo">Hackathon 2025</div>
 
-      <ul class="nav-menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#">Champion Prizes</a></li>
+  <body>
+    <img src="images/circle.png" class="bg-circle" />
+
+    <!-- NAVBAR -->
+    <nav>
+      <h2>Hackathon 2025</h2>
+
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Champion Prize</a></li>
         <li><a href="#">Mentor & Jury</a></li>
         <li><a href="#">Timeline</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">FAQ</a></li>
       </ul>
 
-      <a href="login.html" class="btn-login">Login</a>
-      <p>Already have an account? <a href="login.html">Login</a></p>
+      <button class="login-btn">Login</button>
     </nav>
 
-    <section class="register-section">
-      <div class="register-container">
-        <h1>Register <span>Here</span></h1>
+    <!-- MAIN -->
+    <div class="container">
+      <img src="images/arrowdown.png" class="arrow-down" />
 
-        <h3>Leader Information</h3>
+      <h1>Register <span>Here</span></h1>
+      <h3 class="section-title">Leader Information</h3>
 
-        <div class="form-grid">
-          <div>
+      <form id="regForm">
+        <div class="row">
+          <div class="input-group">
             <label>Full Name *</label>
-            <input type="text" placeholder="John Doe" />
+            <input type="text" required />
           </div>
 
-          <div>
+          <div class="input-group">
             <label>Whatsapp Number *</label>
-            <input type="text" placeholder="08xxxxxxxxxx" />
-          </div>
-
-          <div>
-            <label>Email *</label>
-            <input type="email" placeholder="user@gmail.com" />
-          </div>
-
-          <div>
-            <label>Line ID *</label>
-            <input type="text" placeholder="line_id" />
-          </div>
-
-          <div>
-            <label>Birth Place *</label>
-            <input type="text" placeholder="Jakarta" />
-          </div>
-
-          <div>
-            <label>Birth Date *</label>
-            <input type="date" />
+            <input
+              type="text"
+              id="wa"
+              maxlength="12"
+              inputmode="numeric"
+              placeholder="08xxxxxxxxxx"
+              required
+            />
           </div>
         </div>
-
-        <div class="upload-grid">
-          <div class="upload-box">
-            <p>Upload CV</p>
-            <small>PDF max 2MB</small>
-            <input type="file" />
-          </div>
-
-          <div class="upload-box">
-            <p>Upload Student Card</p>
-            <small>PDF/JPG/PNG</small>
-            <input type="file" />
-          </div>
-
-          <div class="upload-box">
-            <p>Upload ID Card</p>
-            <small>PDF/JPG/PNG</small>
-            <input type="file" />
-          </div>
-        </div>
-
-        <button class="btn-submit">Continue &gt;&gt;</button>
-
-        <p class="login-link">
-          Already have an account? <a href="login.html">Login</a>
-        </p>
-      </div>
-
-      <div class="arrow-container">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <div class="contact-box">
-        <h2>Contact Us</h2>
-        <p>Have questions or need help? Reach out to us.</p>
 
         <div class="row">
-          <input type="text" placeholder="Name" />
-          <input type="email" placeholder="Email" />
+          <div class="input-group">
+            <label>Email *</label>
+            <input type="email" required />
+          </div>
+
+          <div class="input-group">
+            <label>Line ID *</label>
+            <input type="text" required />
+          </div>
+
+          <div class="input-group">
+            <label>Github/Gitlab ID *</label>
+            <input type="text" required />
+          </div>
         </div>
 
-        <input type="text" placeholder="Subject" />
-        <textarea placeholder="Message"></textarea>
-
-        <button>Submit</button>
-      </div>
-
-      <div class="footer-info">
-        <h2>Hackathon 2025</h2>
-        <p>
-          Powered and Organized by BNCC and Technovize. We aim to foster
-          innovation and technological advancement through community-driven
-          events.
-        </p>
-
-        <div class="socials">
-          <span>📷</span>
-          <span>✉️</span>
-          <span>🐦</span>
-          <span>📘</span>
-          <span>🔗</span>
+        <div class="input-group">
+          <label>Birth Place *</label>
+          <select required>
+            <option value="">Choose...</option>
+            <option>Jakarta</option>
+            <option>Bandung</option>
+            <option>Surabaya</option>
+          </select>
         </div>
 
-        <p class="copyright">
-          © 2025 Hackathon. All rights reserved. Privacy Policy | Terms of
-          Service
-        </p>
+        <div class="input-group">
+          <label>Birth Date *</label>
+          <input type="date" required />
+        </div>
+
+        <div class="row">
+          <div class="input-group">
+            <label>Upload CV *</label>
+            <input type="file" class="fileInput" required />
+            <p class="fileName"></p>
+          </div>
+
+          <div class="input-group">
+            <label>Upload Flazz Card *</label>
+            <input type="file" class="fileInput" required />
+            <p class="fileName"></p>
+          </div>
+
+          <div class="input-group">
+            <label>Upload ID Card *</label>
+            <input type="file" class="fileInput" required />
+            <p class="fileName"></p>
+          </div>
+        </div>
+
+        <button type="submit">Continue >></button>
+        <p id="successMsg"></p>
+      </form>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="contact">
+      <h2>Contact Us</h2>
+      <p>Have questions? Reach out to us.</p>
+
+      <input placeholder="Name" />
+      <input placeholder="Email" />
+      <input placeholder="Subject" />
+      <textarea placeholder="Message"></textarea>
+
+      <button onclick="contactSubmit()">Submit</button>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <h2>Hackathon 2025</h2>
+      <p>Powered by BNCC & Technorise</p>
+
+      <div class="socials">
+        <img src="images/instagram.png" />
+        <img src="images/mail.png" />
+        <img src="images/twitter.png" />
+        <img src="images/facebook.png" />
+        <img src="images/linkedin.png" />
       </div>
+
+      <p>© 2025 Hackathon</p>
     </footer>
+
+    <script src="js/main.js"></script>
   </body>
 </html>
