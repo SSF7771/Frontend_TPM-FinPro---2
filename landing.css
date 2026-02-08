@@ -1,0 +1,70 @@
+/* ===== HERO ===== */
+.container {
+  padding: 80px 100px;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-text h1 span {
+  color: #ff6a00;
+}
+
+.hero-text p {
+  margin: 16px 0;
+  opacity: 0.85;
+}
+
+.video-box {
+  width: 360px;
+  height: 200px;
+  background: #000;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* ===== INFO SECTION ===== */
+.info-section {
+  display: flex;
+  gap: 40px;
+  margin-top: 80px;
+}
+
+.about-event,
+.why-join {
+  flex: 1;
+}
+
+.about-event p {
+  opacity: 0.85;
+  line-height: 1.6;
+}
+
+.why-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.why-card {
+  background: rgba(232, 232, 232, 0.06);
+  padding: 20px;
+  border-radius: 14px;
+}
+
+.why-card h3 {
+  color: #ff6a00;
+  margin-bottom: 8px;
+}
+
+.why-card p {
+  font-size: 14px;
+  opacity: 0.85;
+}

@@ -1,0 +1,135 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #0c1333, #020617);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+}
+
+.nav-actions {
+  display: flex;
+}
+
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.video-box {
+  width: 360px;
+  height: 200px;
+  background: #000;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-section {
+  display: flex;
+  gap: 40px;
+  margin-top: 80px;
+}
+
+.about-event {
+  flex: 1;
+}
+
+.about-event h2 {
+  margin-bottom: 16px;
+}
+
+.about-event p {
+  opacity: 0.85;
+  line-height: 1.6;
+}
+
+.why-join {
+  flex: 1;
+}
+
+.why-join h2 {
+  margin-bottom: 20px;
+}
+
+.why-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.why-card {
+  background: rgba(232, 232, 232, 0.06);
+  padding: 20px;
+  border-radius: 14px;
+}
+
+.why-card h3 {
+  color: #ff6a00;
+  margin-bottom: 8px;
+}
+
+.why-card p {
+  font-size: 14px;
+  opacity: 0.85;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #ffffff;
+}
+
+p,
+li,
+span {
+  color: #e5e7eb;
+}
+
+a {
+  color: #ffffff;
+}
+
+.navbar a {
+  color: #ffffff;
+}
+
+.card p {
+  color: #d1d5db;
+}
+
+.btn {
+  background: #ff6a00 !important;
+  color: #ffffff !important;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #ff7a1a;
+}
